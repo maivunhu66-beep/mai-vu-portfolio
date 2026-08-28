@@ -21,7 +21,13 @@ export function ProjectVisual({
     >
       <div className="bg-grid absolute inset-0 opacity-[0.4]" />
       <div className="relative p-5">
-        {variant === 'dashboard' && <DashboardViz />}
+      {variant === 'dashboard' && (
+  <img
+    src="/logistics-dashboard.png"
+    alt="Logistics delivery performance dashboard"
+    className="h-full w-full object-contain"
+  />
+)}
         {variant === 'strategy' && <StrategyViz />}
         {variant === 'model' && <ModelViz />}
       </div>
