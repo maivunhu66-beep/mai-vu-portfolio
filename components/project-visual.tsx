@@ -21,15 +21,15 @@ export function ProjectVisual({
     >
       <div className="bg-grid absolute inset-0 opacity-[0.4]" />
       <div className="relative p-5">
-      {variant === 'dashboard' && (
+      
+        {variant === 'strategy' && <StrategyViz />}
+        {variant === 'model' && (
   <img
-    src="/logistics-dashboard.png"
-    alt="Logistics delivery performance dashboard"
+    src="/wine-model-results.png"
+    alt="Wine quality logistic regression model results"
     className="h-full w-full object-contain"
   />
 )}
-        {variant === 'strategy' && <StrategyViz />}
-        {variant === 'model' && <ModelViz />}
       </div>
     </div>
   )
